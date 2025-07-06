@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IH8 - Revolução IA no Mercado Imobiliário | BETA EXCLUSIVO</title>
+    <meta name="description" content="A primeira plataforma brasileira com IA que revoluciona o mercado imobiliário. Avalie imóveis em 3 segundos, gere contratos automáticos e venda 5x mais rápido.">
+    <meta name="keywords" content="inteligência artificial imobiliário, CRM imobiliário, avaliação imóvel IA, plataforma imobiliária">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #8b5cf6 100%);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .testimonial-gradient {
+            background: linear-gradient(45deg, #f3f4f6, #ffffff);
+        }
+        
+        .pricing-glow {
+            box-shadow: 0 0 40px rgba(59, 130, 246, 0.3);
+        }
+        
+        .sticky-cta {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        .countdown {
+            font-variant-numeric: tabular-nums;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="text-2xl mr-2">🏠</div>
+                    <div>
+                        <span class="text-xl font-bold text-gray-800">IH8</span>
+                        <span class="text-sm text-blue-600 ml-2 bg-blue-100 px-2 py-1 rounded-full">BETA</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#funcionalidades" class="text-gray-600 hover:text-blue-600 transition-colors">Funcionalidades</a>
+                    <a href="#precos" class="text-gray-600 hover:text-blue-600 transition-colors">Preços</a>
+                    <a href="#depoimentos" class="text-gray-600 hover:text-blue-600 transition-colors">Depoimentos</a>
+                    <button onclick="scrollToDemo()" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                        Ver Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-10"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <!-- Urgência -->
+                <div class="inline-flex items-center bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    <i class="fas fa-fire mr-2"></i>
+                    <span class="countdown">7 DIAS GRÁTIS - OFERTA POR TEMPO LIMITADO</span>
+                </div>
+                
+                <!-- Headline Principal -->
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                    A <span class="text-yellow-300">Primeira IA</span> que<br>
+                    <span class="text-blue-300">Revoluciona</span> o Mercado<br>
+                    Imobiliário Brasileiro
+                </h1>
+                
+                <!-- Subheadline -->
+                <p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-4xl mx-auto">
+                    Avalie imóveis em <strong>3 segundos</strong>, gere contratos automáticos e 
+                    <strong class="text-yellow-300">venda 5x mais rápido</strong> com 94.7% de precisão
+                </p>
+                
+                <!-- Social Proof -->
+                <div class="flex flex-wrap justify-center items-center gap-8 mb-10 text-blue-200">
+                    <div class="flex items-center">
+                        <i class="fas fa-home mr-2"></i>
+                        <span><strong>1.663</strong> imóveis avaliados</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-file-contract mr-2"></i>
+                        <span><strong>247</strong> contratos gerados</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-chart-line mr-2"></i>
+                        <span><strong>R$ 2.8M</strong> vendidos</span>
+                    </div>
+                </div>
+                
+                <!-- CTA Principal -->
+                <div class="space-y-4">
+                    <button onclick="scrollToPricing()" class="bg-yellow-400 text-gray-900 text-xl font-bold px-8 py-4 rounded-lg hover:bg-yellow-300 transition-all transform hover:scale-105 pulse-animation">
+                        🚀 TESTE 7 DIAS GRÁTIS - COMECE AGORA
+                    </button>
+                    <p class="text-blue-200 text-sm">
+                        💳 Sem taxa de setup | 📱 Acesso imediato | 🔒 Cancele quando quiser
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-20 left-20 text-6xl opacity-20 float-animation">🤖</div>
+        <div class="absolute bottom-20 right-20 text-4xl opacity-20 float-animation" style="animation-delay: 1s;">📊</div>
+    </section>
+
+    <!-- Problema & Solução -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    Você está <span class="text-red-600">perdendo dinheiro</span> todos os dias...
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Enquanto você usa ferramentas fragmentadas e caras, seus concorrentes já estão usando IA
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Problemas -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-red-600 mb-6">❌ PROBLEMAS ATUAIS:</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-times-circle text-red-500 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Ferramentas caras e fragmentadas</strong>
+                                <p class="text-gray-600">R$ 2.000+/mês em múltiplas plataformas</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-times-circle text-red-500 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Avaliações demoradas e imprecisas</strong>
+                                <p class="text-gray-600">Dias para avaliar, clientes desistem</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-times-circle text-red-500 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Contratos manuais e burocráticos</strong>
+                                <p class="text-gray-600">Semanas para fechar negócios</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-times-circle text-red-500 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Baixa taxa de conversão</strong>
+                                <p class="text-gray-600">Apenas 8% dos leads se tornam vendas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Soluções -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-green-600 mb-6">✅ COM O IH8:</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Tudo em uma plataforma</strong>
+                                <p class="text-gray-600">70% de economia vs ferramentas atuais</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Avaliação IA em 3 segundos</strong>
+                                <p class="text-gray-600">94.7% de precisão, clientes impressionados</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <div>
+                                <strong>Contratos automáticos</strong>
+                                <p class="text-gray-600">47 segundos para gerar documentos legais</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                            <div>
+                                <strong>34.2% de conversão</strong>
+                                <p class="text-gray-600">4x mais vendas que a média do mercado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo do Sistema -->
+    <section id="demo" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    Veja o IH8 em <span class="text-blue-600">Ação</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Sistema completo funcionando em tempo real
+                </p>
+            </div>
+            
+            <!-- Mini Demo Integration -->
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+                <div class="bg-gradient-to-r from-blue-600 to-purple-600 p-4 text-white text-center">
+                    <h3 class="text-lg font-bold">🚀 DEMO EXCLUSIVA - IH8 BETA</h3>
+                    <p class="text-blue-100">Clique nos módulos abaixo para testar</p>
+                </div>
+                
+                <div class="p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <button onclick="showDemo('avaliacao')" class="demo-card bg-blue-50 p-6 rounded-lg border-2 border-transparent hover:border-blue-500 transition-all">
+                            <i class="fas fa-robot text-3xl text-blue-600 mb-3"></i>
+                            <h4 class="font-bold text-gray-800 mb-2">Avaliação IA</h4>
+                            <p class="text-gray-600 text-sm">Avalie qualquer imóvel em 3 segundos</p>
+                        </button>
+                        
+                        <button onclick="showDemo('crm')" class="demo-card bg-green-50 p-6 rounded-lg border-2 border-transparent hover:border-green-500 transition-all">
+                            <i class="fas fa-users text-3xl text-green-600 mb-3"></i>
+                            <h4 class="font-bold text-gray-800 mb-2">CRM Inteligente</h4>
+                            <p class="text-gray-600 text-sm">Gerencie leads com automação</p>
+                        </button>
+                        
+                        <button onclick="showDemo('contratos')" class="demo-card bg-purple-50 p-6 rounded-lg border-2 border-transparent hover:border-purple-500 transition-all">
+                            <i class="fas fa-file-contract text-3xl text-purple-600 mb-3"></i>
+                            <h4 class="font-bold text-gray-800 mb-2">Contratos IA</h4>
+                            <p class="text-gray-600 text-sm">Gere contratos em 47 segundos</p>
+                        </button>
+                    </div>
+                    
+                    <div id="demo-result" class="mt-8 hidden">
+                        <div class="bg-gradient-to-r from-green-500 to-blue-600 p-6 rounded-lg text-white text-center">
+                            <h3 class="text-xl font-bold mb-2">🎉 Demo Funcionando!</h3>
+                            <p class="mb-4">Este é apenas uma pequena amostra do poder do IH8</p>
+                            <button onclick="scrollToPricing()" class="bg-white text-blue-600 font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors">
+                                QUERO ACESSO COMPLETO AGORA
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funcionalidades -->
+    <section id="funcionalidades" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    <span class="text-blue-600">10 Módulos</span> que vão Revolucionar seu Negócio
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Tudo que você precisa em uma única plataforma inteligente
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl">
+                    <i class="fas fa-robot text-3xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Avaliação IA</h3>
+                    <p class="text-gray-600 mb-4">Avalie qualquer imóvel em 3 segundos com 94.7% de precisão</p>
+                    <div class="text-sm text-blue-600 font-medium">💰 Economia: R$ 127K em laudos</div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl">
+                    <i class="fas fa-users text-3xl text-green-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">CRM Inteligente</h3>
+                    <p class="text-gray-600 mb-4">Pipeline visual com automação e qualificação de leads</p>
+                    <div class="text-sm text-green-600 font-medium">📈 +34.2% conversão</div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-xl">
+                    <i class="fas fa-file-contract text-3xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Contratos IA</h3>
+                    <p class="text-gray-600 mb-4">Gere contratos legais automaticamente em 47 segundos</p>
+                    <div class="text-sm text-purple-600 font-medium">💰 Economia: R$ 87K vs advogados</div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-xl">
+                    <i class="fas fa-blog text-3xl text-orange-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Blog IA</h3>
+                    <p class="text-gray-600 mb-4">Conteúdo automático otimizado para SEO e captura de leads</p>
+                    <div class="text-sm text-orange-600 font-medium">🚀 #1 ranking Google</div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-xl">
+                    <i class="fab fa-whatsapp text-3xl text-pink-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">WhatsApp IA</h3>
+                    <p class="text-gray-600 mb-4">Atendimento automático 24/7 com 87% de taxa de resposta</p>
+                    <div class="text-sm text-pink-600 font-medium">⚡ Resposta em 30s</div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-6 rounded-xl">
+                    <i class="fas fa-chart-line text-3xl text-yellow-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Dashboard Executivo</h3>
+                    <p class="text-gray-600 mb-4">Métricas em tempo real e insights estratégicos da IA</p>
+                    <div class="text-sm text-yellow-600 font-medium">📊 ROI: 387%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    O que os <span class="text-blue-600">Beta Testers</span> estão dizendo
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-gradient p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/50x50/3B82F6/FFFFFF?text=JS" alt="João Silva" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">João Silva</h4>
+                            <p class="text-gray-600 text-sm">Corretor Autônomo - SP</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Em 30 dias usando o IH8 beta, minha receita aumentou 150%. A IA é impressionante!"</p>
+                    <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
+                </div>
+                
+                <div class="testimonial-gradient p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/50x50/10B981/FFFFFF?text=MS" alt="Maria Santos" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Maria Santos</h4>
+                            <p class="text-gray-600 text-sm">Diretora Imobiliária Premium</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Automatizamos 80% dos processos. Minha equipe agora foca só no que importa: vender!"</p>
+                    <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
+                </div>
+                
+                <div class="testimonial-gradient p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/50x50/8B5CF6/FFFFFF?text=CP" alt="Carlos Pereira" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Carlos Pereira</h4>
+                            <p class="text-gray-600 text-sm">CEO Construtora Alpha</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"O IH8 nos economiza R$ 15K/mês e vendemos 3x mais rápido. Indispensável!"</p>
+                    <div class="text-yellow-400">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="precos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    Planos <span class="text-blue-600">IH8</span>
+                </h2>
+                <p class="text-xl text-gray-600 mb-4">
+                    7 dias grátis para testar • Cancele quando quiser
+                </p>
+                <div class="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">
+                    <i class="fas fa-gift mr-2"></i>
+                    <span>Teste GRÁTIS por 7 dias - Sem compromisso</span>
+                </div>
+            </div>
+            
+            <!-- Corretores -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-gray-800 text-center mb-8">👤 Para Corretores</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-blue-50 p-8 rounded-xl border-2 border-blue-200">
+                        <div class="text-center">
+                            <h4 class="text-xl font-bold text-gray-800 mb-4">Corretor Individual</h4>
+                            <div class="mb-6">
+                                <span class="text-4xl font-bold text-blue-600">R$ 49,90</span>
+                                <p class="text-gray-600">/mês após 7 dias grátis</p>
+                            </div>
+                            <ul class="text-left space-y-3 mb-8">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 1 usuário</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Imóveis ilimitados</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> CRM completo</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Site personalizado</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> IA Avaliação</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> WhatsApp integrado</li>
+                            </ul>
+                            <button onclick="selectPlan('corretor-individual')" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors font-bold">
+                                🚀 TESTE 7 DIAS GRÁTIS
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-purple-50 p-8 rounded-xl border-2 border-purple-200">
+                        <div class="text-center">
+                            <h4 class="text-xl font-bold text-gray-800 mb-4">Corretor Lançamentos</h4>
+                            <div class="mb-6">
+                                <span class="text-4xl font-bold text-purple-600">R$ 49,90</span>
+                                <p class="text-gray-600">/mês após 7 dias grátis</p>
+                            </div>
+                            <ul class="text-left space-y-3 mb-8">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 1 usuário</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Imóveis ilimitados</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> CRM completo</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Landing pages</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Foco em lançamentos</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> IA Avaliação</li>
+                            </ul>
+                            <button onclick="selectPlan('corretor-lancamento')" class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors font-bold">
+                                🚀 TESTE 7 DIAS GRÁTIS
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Imobiliárias -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-gray-800 text-center mb-8">🏢 Para Imobiliárias</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <div class="text-center">
+                            <h4 class="text-lg font-bold text-gray-800 mb-4">Até 3 Usuários</h4>
+                            <div class="mb-6">
+                                <span class="text-3xl font-bold text-gray-800">R$ 99,90</span>
+                                <p class="text-gray-600 text-sm">/mês após 7 dias grátis</p>
+                            </div>
+                            <ul class="text-left space-y-2 mb-6 text-sm">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 3 usuários</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Imóveis ilimitados</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> CRM + Site</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Relatórios</li>
+                            </ul>
+                            <button onclick="selectPlan('imobiliaria-3')" class="w-full bg-gray-600 text-white py-2 rounded-lg hover:bg-gray-700 transition-colors text-sm font-bold">
+                                TESTE GRÁTIS
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-6 rounded-xl border-2 border-blue-300 relative">
+                        <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                            POPULAR
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-lg font-bold text-gray-800 mb-4">Até 10 Usuários</h4>
+                            <div class="mb-6">
+                                <span class="text-3xl font-bold text-blue-600">R$ 159,90</span>
+                                <p class="text-gray-600 text-sm">/mês após 7 dias grátis</p>
+                            </div>
+                            <ul class="text-left space-y-2 mb-6 text-sm">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 10 usuários</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Imóveis ilimitados</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> CRM + Site</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Integrações</li>
+                            </ul>
+                            <button onclick="selectPlan('imobiliaria-10')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-bold">
+                                TESTE GRÁTIS
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-xl">
+                        <div class="text-center">
+                            <h4 class="text-lg font-bold text-gray-800 mb-4">Acima 11 Usuários</h4>
+                            <div class="mb-6">
+                                <span class="text-3xl font-bold text-gray-800">R$ 299,90</span>
+                                <p class="text-gray-600 text-sm">/mês após 7 dias grátis</p>
+                            </div>
+                            <ul class="text-left space-y-2 mb-6 text-sm">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Usuários ilimitados</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Imóveis ilimitados</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> CRM + Site</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Suporte priority</li>
+                            </ul>
+                            <button onclick="selectPlan('imobiliaria-ilimitado')" class="w-full bg-gray-600 text-white py-2 rounded-lg hover:bg-gray-700 transition-colors text-sm font-bold">
+                                TESTE GRÁTIS
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Construtoras -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-gray-800 text-center mb-8">🏗️ Para Construtoras/Incorporadoras</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-orange-50 p-6 rounded-xl">
+                        <div class="text-center">
+                            <h4 class="text-lg font-bold text-gray-800 mb-4">1 Usuário</h4>
+                            <div class="mb-6">
+                                <span class="text-3xl font-bold text-orange-600">R$ 49,90</span>
+                                <p class="text-gray-600 text-sm">/mês após 7 dias grátis</p>
+                            </div>
+                            <ul class="text-left space-y-2 mb-6 text-sm">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 1 usuário</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Imóveis ilimitados</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> CRM + Landing</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Gestão lançamentos</li>
+                            </ul>
+                            <button onclick="selectPlan('construtora-1')" class="w-full bg-orange-600 text-white py-2 rounded-lg hover:bg-orange-700 transition-colors text-sm font-bold">
+                                TESTE GRÁTIS
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-orange-50 p-6 rounded-xl">
+                        <div class="text-center">
+                            <h4 class="text-lg font-bold text-gray-800 mb-4">3 Usuários</h4>
+                            <div class="mb-6">
+                                <span class="text-3xl font-bold text-orange-600">R$ 99,90</span>
+                                <p class="text-gray-600 text-sm">/mês após 7 dias grátis</p>
+                            </div>
+                            <ul class="text-left space-y-2 mb-6 text-sm">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 3 usuários</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Imóveis ilimitados</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> CRM + Landing</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Relatórios</li>
+                            </ul>
+                            <button onclick="selectPlan('construtora-3')" class="w-full bg-orange-600 text-white py-2 rounded-lg hover:bg-orange-700 transition-colors text-sm font-bold">
+                                TESTE GRÁTIS
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-orange-50 p-6 rounded-xl">
+                        <div class="text-center">
+                            <h4 class="text-lg font-bold text-gray-800 mb-4">10 Usuários</h4>
+                            <div class="mb-6">
+                                <span class="text-3xl font-bold text-orange-600">R$ 159,90</span>
+                                <p class="text-gray-600 text-sm">/mês após 7 dias grátis</p>
+                            </div>
+                            <ul class="text-left space-y-2 mb-6 text-sm">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 10 usuários</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Imóveis ilimitados</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> CRM + Landing</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Integrações</li>
+                            </ul>
+                            <button onclick="selectPlan('construtora-10')" class="w-full bg-orange-600 text-white py-2 rounded-lg hover:bg-orange-700 transition-colors text-sm font-bold">
+                                TESTE GRÁTIS
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-orange-50 p-6 rounded-xl">
+                        <div class="text-center">
+                            <h4 class="text-lg font-bold text-gray-800 mb-4">Acima 11 Usuários</h4>
+                            <div class="mb-6">
+                                <span class="text-3xl font-bold text-orange-600">R$ 299,90</span>
+                                <p class="text-gray-600 text-sm">/mês após 7 dias grátis</p>
+                            </div>
+                            <ul class="text-left space-y-2 mb-6 text-sm">
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Usuários ilimitados</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Imóveis ilimitados</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> CRM + Landing</li>
+                                <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Suporte priority</li>
+                            </ul>
+                            <button onclick="selectPlan('construtora-ilimitado')" class="w-full bg-orange-600 text-white py-2 rounded-lg hover:bg-orange-700 transition-colors text-sm font-bold">
+                                TESTE GRÁTIS
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Garantias -->
+            <div class="mt-16 text-center">
+                <div class="inline-flex items-center space-x-8 text-gray-600">
+                    <div class="flex items-center">
+                        <i class="fas fa-gift text-green-500 text-2xl mr-2"></i>
+                        <span>7 dias grátis</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-times-circle text-red-500 text-2xl mr-2"></i>
+                        <span>Cancele quando quiser</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-rocket text-blue-500 text-2xl mr-2"></i>
+                        <span>Acesso imediato</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    Perguntas <span class="text-blue-600">Frequentes</span>
+                </h2>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">🤖 A IA realmente funciona?</h3>
+                    <p class="text-gray-600">Sim! Nossa IA tem 94.7% de precisão, testada com mais de 50.000 transações reais. É a mesma tecnologia usada por grandes players do mercado.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">💰 O desconto de 70% é real?</h3>
+                    <p class="text-gray-600">Sim! É nosso lançamento beta. Após o lançamento oficial, os preços serão os valores originais. O desconto é vitalício para beta testers.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">🔧 Preciso de conhecimento técnico?</h3>
+                    <p class="text-gray-600">Não! O IH8 é plug-and-play. Em 5 minutos você já está operando. Nosso suporte te ajuda na configuração inicial.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg">
+                    <h3 class="text-lg font-bold text-gray-800 mb-2">📱 Funciona no celular?</h3>
+                    <p class="text-gray-600">Perfeitamente! O sistema é 100% responsivo. Você pode operar de qualquer lugar, qualquer hora.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-20 hero-gradient">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                Não perca esta <span class="text-yellow-300">oportunidade única</span>
+            </h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Apenas 48 vagas restantes para o beta exclusivo com 70% de desconto vitalício
+            </p>
+            
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-white">
+                    <div>
+                        <div class="text-3xl font-bold text-yellow-300">R$ 2.8M</div>
+                        <div>vendidos pelos beta testers</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-yellow-300">94.7%</div>
+                        <div>precisão da IA</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-yellow-300">70%</div>
+                        <div>economia vs ferramentas atuais</div>
+                    </div>
+                </div>
+            </div>
+            
+            <button onclick="selectPlan('pro')" class="bg-yellow-400 text-gray-900 text-xl font-bold px-12 py-4 rounded-lg hover:bg-yellow-300 transition-all transform hover:scale-105 pulse-animation">
+                🚀 TESTE 7 DIAS GRÁTIS - COMECE AGORA
+            </button>
+            
+            <p class="text-blue-200 text-sm mt-4">
+                💳 Parcelamos em até 12x | 🔒 Compra 100% segura | 📞 Suporte dedicado
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="text-2xl mr-2">🏠</div>
+                        <span class="text-xl font-bold">IH8</span>
+                    </div>
+                    <p class="text-gray-400">
+                        A primeira plataforma brasileira com IA para o mercado imobiliário.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4">Produto</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Funcionalidades</li>
+                        <li>Preços</li>
+                        <li>Demo</li>
+                        <li>API</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4">Suporte</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Central de Ajuda</li>
+                        <li>Contato</li>
+                        <li>WhatsApp</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4">Contato</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>📧 contato@ih8.com.br</li>
+                        <li>📱 (11) 99459-5385</li>
+                        <li>🏢 São Paulo, SP</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 IH8 - Inteligência Habitacional 8.0. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta hidden md:block">
+        <button onclick="selectPlan('pro')" class="bg-green-500 text-white font-bold px-6 py-3 rounded-full shadow-lg hover:bg-green-600 transition-colors pulse-animation">
+            🚀 BETA 70% OFF
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // IMPORTANTE: Configurar URL da API
+        const API_URL = 'https://ih8-backend-final-production.up.railway.app'; // ALTERAR DEPOIS DO DEPLOY
+        
+        // Smooth scrolling
+        function scrollToPricing() {
+            document.getElementById('precos').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function scrollToDemo() {
+            document.getElementById('demo').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Demo functionality
+        function showDemo(type) {
+            const result = document.getElementById('demo-result');
+            result.classList.remove('hidden');
+            result.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Plan selection
+        function selectPlan(plan) {
+            const plans = {
+                'corretor-individual': {
+                    name: 'Corretor Individual',
+                    price: 49.90,
+                    planId: 'corretor-individual'
+                },
+                'corretor-lancamento': {
+                    name: 'Corretor Lançamentos',
+                    price: 49.90,
+                    planId: 'corretor-lancamento'
+                },
+                'imobiliaria-3': {
+                    name: 'Imobiliária até 3 usuários',
+                    price: 99.90,
+                    planId: 'imobiliaria-3'
+                },
+                'imobiliaria-10': {
+                    name: 'Imobiliária até 10 usuários',
+                    price: 159.90,
+                    planId: 'imobiliaria-10'
+                },
+                'imobiliaria-ilimitado': {
+                    name: 'Imobiliária ilimitada',
+                    price: 299.90,
+                    planId: 'imobiliaria-ilimitado'
+                },
+                'construtora-1': {
+                    name: 'Construtora 1 usuário',
+                    price: 49.90,
+                    planId: 'construtora-1'
+                },
+                'construtora-3': {
+                    name: 'Construtora 3 usuários',
+                    price: 99.90,
+                    planId: 'construtora-3'
+                },
+                'construtora-10': {
+                    name: 'Construtora 10 usuários',
+                    price: 159.90,
+                    planId: 'construtora-10'
+                },
+                'construtora-ilimitado': {
+                    name: 'Construtora ilimitada',
+                    price: 299.90,
+                    planId: 'construtora-ilimitado'
+                },
+                'pro': {
+                    name: 'Plano Profissional',
+                    price: 159.90,
+                    planId: 'imobiliaria-10'
+                }
+            };
+            
+            const selectedPlan = plans[plan];
+            showTrialModal(selectedPlan);
+        }
+        
+        function showTrialModal(planData) {
+            const modal = `
+                <div class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+                    <div class="bg-white rounded-xl shadow-xl max-w-md w-full">
+                        <div class="p-6 border-b border-gray-200">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-xl font-bold text-gray-800">Teste 7 Dias Grátis</h3>
+                                <button onclick="this.closest('.fixed').remove()" class="text-gray-400 hover:text-gray-600">
+                                    <i class="fas fa-times text-xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <div class="text-center mb-6">
+                                <h4 class="text-lg font-semibold text-gray-800">${planData.name}</h4>
+                                <div class="bg-green-50 border border-green-200 rounded-lg p-3 mt-3">
+                                    <div class="text-sm text-green-700">
+                                        <strong>7 DIAS GRÁTIS</strong> para testar todas as funcionalidades
+                                    </div>
+                                    <div class="text-xl font-bold text-green-600 mt-1">
+                                        Depois: R$ ${planData.price.toFixed(2)}/mês
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <form id="trial-form" class="space-y-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Nome Completo *</label>
+                                    <input type="text" name="name" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                                    <input type="email" name="email" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">WhatsApp *</label>
+                                    <input type="tel" name="whatsapp" required class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="(11) 99999-9999">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Empresa/CRECI</label>
+                                    <input type="text" name="company" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Como conheceu o IH8?</label>
+                                    <select name="source" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                        <option value="">Selecione...</option>
+                                        <option value="whatsapp">WhatsApp</option>
+                                        <option value="email">Email</option>
+                                        <option value="indicacao">Indicação</option>
+                                        <option value="google">Google</option>
+                                        <option value="facebook">Facebook</option>
+                                        <option value="linkedin">LinkedIn</option>
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                </div>
+                            </form>
+                            
+                            <div class="mt-6">
+                                <button onclick="activateFreeTrial('${planData.planId}')" class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors font-bold">
+                                    🎁 COMEÇAR TESTE GRÁTIS DE 7 DIAS
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            document.body.insertAdjacentHTML('beforeend', modal);
+        }
+        
+        function activateFreeTrial(planId) {
+            const form = document.getElementById('trial-form');
+            const formData = new FormData(form);
+            
+            if (!form.checkValidity()) {
+                alert('⚠️ Preencha todos os campos obrigatórios');
+                return;
+            }
+            
+            // Mostrar loading
+            const modal = document.querySelector('.fixed');
+            modal.innerHTML = `
+                <div class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+                    <div class="bg-white rounded-xl shadow-xl max-w-md w-full p-8 text-center">
+                        <div class="animate-spin rounded-full h-16 w-16 border-b-2 border-green-600 mx-auto mb-4"></div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Ativando seu teste grátis...</h3>
+                        <p class="text-gray-600">Aguarde um momento</p>
+                    </div>
+                </div>
+            `;
+            
+            // Dados para envio
+            const trialData = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                whatsapp: formData.get('whatsapp'),
+                company: formData.get('company'),
+                planId: planId,
+                source: formData.get('source') || 'landing_page'
+            };
+            
+            // Enviar para API
+            fetch(`${API_URL}/api/trials/activate`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(trialData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.trial || data.user) {
+                    showSuccessModal(trialData);
+                } else {
+                    throw new Error(data.error || 'Erro ao ativar trial');
+                }
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+                alert('❌ Erro ao ativar teste. Tente novamente ou entre em contato conosco.');
+                modal.remove();
+            });
+        }
+        
+        function showSuccessModal(userData) {
+            const modal = `
+                <div class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+                    <div class="bg-white rounded-xl shadow-xl max-w-md w-full p-8 text-center">
+                        <div class="text-6xl mb-4">🎉</div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Teste Grátis Ativado!</h3>
+                        <p class="text-gray-600 mb-6">
+                            Seu teste de 7 dias foi ativado com sucesso!<br>
+                            Você receberá um WhatsApp e email com os dados de acesso.
+                        </p>
+                        
+                        <div class="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
+                            <h4 class="font-bold text-green-800 mb-2">Próximos passos:</h4>
+                            <div class="text-sm text-green-700 text-left space-y-1">
+                                <p>✅ Verificar WhatsApp e email</p>
+                                <p>✅ Fazer login na plataforma</p>
+                                <p>✅ Configurar seu perfil</p>
+                                <p>✅ Importar seus imóveis</p>
+                                <p>✅ Testar a IA de avaliação</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <button onclick="window.open('https://wa.me/5511994595385?text=Olá! Acabei de ativar meu teste grátis do IH8. Preciso de ajuda com o acesso.', '_blank')" class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors">
+                                📱 Falar com Suporte
+                            </button>
+                            <button onclick="window.location.reload()" class="w-full bg-gray-600 text-white py-3 rounded-lg hover:bg-gray-700 transition-colors">
+                                🚀 Voltar ao Site
+                            </button>
+                        </div>
+                        
+                        <div class="mt-6 text-xs text-gray-500">
+                            <p>Lembre-se: Você tem 7 dias para testar tudo gratuitamente.</p>
+                            <p>Cancele quando quiser, sem custos adicionais.</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            document.body.innerHTML = modal;
+        }
+
+        // Update countdown timer
+        function updateCountdown() {
+            const messages = [
+                'TESTE 7 DIAS GRÁTIS - SEM COMPROMISSO',
+                'ACESSO IMEDIATO - CANCELE QUANDO QUISER',
+                'OFERTA ESPECIAL BETA - ÚLTIMAS VAGAS',
+                'DESCONTO VITALÍCIO - APENAS PARA TESTERS'
+            ];
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            const countdownElement = document.querySelector('.countdown');
+            if (countdownElement) {
+                countdownElement.textContent = randomMessage;
+            }
+        }
+        
+        // Page load optimizations
+        window.addEventListener('load', function() {
+            // Start animations
+            const animatedElements = document.querySelectorAll('.pulse-animation');
+            animatedElements.forEach(el => {
+                el.style.animationDelay = Math.random() * 2 + 's';
+            });
+            
+            // Update countdown periodically
+            updateCountdown();
+            setInterval(updateCountdown, 8000);
+        });
+        
+        // Track user behavior
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.1;
+            
+            // Parallax effect
+            const floatingElements = document.querySelectorAll('.float-animation');
+            floatingElements.forEach(el => {
+                el.style.transform = `translateY(${rate}px)`;
+            });
+        });
+        
+        // Exit intent popup
+        let exitShown = false;
+        document.addEventListener('mouseleave', function(e) {
+            if (e.clientY <= 0 && !exitShown) {
+                exitShown = true;
+                if (confirm('🚨 ÚLTIMA CHANCE!\n\nVocê está prestes a perder o acesso ao beta exclusivo!\n\nDeseja ativar seu teste grátis agora?')) {
+                    scrollToPricing();
+                }
+            }
+        });
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+
+    <!-- Facebook Pixel -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'FACEBOOK_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+</body>
+</html>
