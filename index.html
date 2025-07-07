@@ -3,76 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Otimizado -->
     <title>IH8 - Sistema Imobiliário com Inteligência Artificial | 94.7% de Precisão</title>
     <meta name="description" content="Revolucione suas vendas imobiliárias com IA. Avalie imóveis em 3 segundos, gere contratos automáticos e venda 5x mais rápido. Teste grátis por 7 dias.">
-    <meta name="keywords" content="sistema imobiliário, inteligência artificial imóveis, CRM imobiliário, avaliação de imóveis, IH8, software imobiliária">
-    <meta name="author" content="IH8 - Inteligência Habitacional 8.0">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.ih8.com.br">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.ih8.com.br/">
-    <meta property="og:title" content="IH8 - Revolucione o Mercado Imobiliário com IA">
-    <meta property="og:description" content="Sistema completo com IA para imobiliárias. Aumente suas vendas em 400%.">
-    <meta property="og:image" content="https://www.ih8.com.br/og-image.jpg">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.ih8.com.br/">
-    <meta property="twitter:title" content="IH8 - Sistema Imobiliário com IA">
-    <meta property="twitter:description" content="Revolucione suas vendas com inteligência artificial.">
-    
-    <!-- Schema.org -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "IH8",
-        "description": "Sistema imobiliário com inteligência artificial",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Web",
-        "offers": {
-            "@type": "Offer",
-            "price": "197",
-            "priceCurrency": "BRL",
-            "priceValidUntil": "2024-12-31"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "127"
-        }
-    }
-    </script>
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXX');
-    </script>
-    
-    <!-- Facebook Pixel -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'SEU_PIXEL_ID');
-    fbq('track', 'PageView');
-    </script>
-    
-    <!-- Stripe -->
-    <script src="https://js.stripe.com/v3/"></script>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -113,7 +45,7 @@
     <!-- Notificação Social -->
     <div id="notificacao-social" class="fixed bottom-20 left-6 bg-gray-800 rounded-lg p-4 shadow-lg hidden max-w-xs">
         <p class="text-sm font-semibold"><span id="nome-cliente">João S.</span> de <span id="cidade-cliente">São Paulo</span></p>
-        <p class="text-xs text-gray-400">Acabou de assinar o plano <span id="plano-cliente">Professional</span></p>
+        <p class="text-xs text-gray-400">Acabou de solicitar acesso beta</p>
     </div>
 
     <!-- Header -->
@@ -124,9 +56,8 @@
                 <a href="#home" class="hover:text-purple-400 transition">Início</a>
                 <a href="#recursos" class="hover:text-purple-400 transition">Recursos</a>
                 <a href="#precos" class="hover:text-purple-400 transition">Preços</a>
-                <a href="#depoimentos" class="hover:text-purple-400 transition">Depoimentos</a>
-                <a href="https://app.ih8.com.br" class="bg-purple-600 px-4 py-2 rounded-lg hover:bg-purple-700 transition">
-                    Acessar Sistema
+                <a href="#demo" class="bg-purple-600 px-4 py-2 rounded-lg hover:bg-purple-700 transition">
+                    Ver Demo
                 </a>
             </nav>
         </div>
@@ -138,9 +69,9 @@
             <!-- Countdown Urgência -->
             <div class="countdown-urgency rounded-lg p-4 mb-8 max-w-2xl mx-auto">
                 <p class="text-lg font-bold text-red-400">
-                    ⏰ Oferta Beta termina em: <span id="timer" class="font-mono">23:59:59</span>
+                    ⏰ Lista de espera Beta: <span id="vagas" class="font-bold">48</span> vagas restantes
                 </p>
-                <p class="text-sm mt-2">Apenas <span id="vagas" class="font-bold">48</span> vagas restantes com 70% de desconto!</p>
+                <p class="text-sm mt-2">Entre na lista para garantir 70% de desconto vitalício quando lançarmos!</p>
             </div>
 
             <h1 class="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
@@ -152,18 +83,18 @@
             </p>
             
             <div class="flex flex-wrap justify-center gap-4 mb-8">
-                <button onclick="abrirModalLead('hero')" class="bg-gradient-to-r from-purple-500 to-pink-500 px-8 py-4 rounded-lg text-lg font-bold hover:opacity-90 transition">
-                    Começar Teste Grátis →
+                <button onclick="abrirFormularioEspera()" class="bg-gradient-to-r from-purple-500 to-pink-500 px-8 py-4 rounded-lg text-lg font-bold hover:opacity-90 transition">
+                    Entrar na Lista de Espera →
                 </button>
-                <button onclick="verDemo()" class="border border-purple-500 px-8 py-4 rounded-lg text-lg font-bold hover:bg-purple-500/20 transition">
+                <button onclick="scrollToDemo()" class="border border-purple-500 px-8 py-4 rounded-lg text-lg font-bold hover:bg-purple-500/20 transition">
                     Ver Demonstração
                 </button>
             </div>
             
             <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
                 <span>💳 Sem taxa de setup</span>
-                <span>📱 Acesso imediato</span>
-                <span>🔒 Cancele quando quiser</span>
+                <span>📱 Acesso imediato quando lançar</span>
+                <span>🔒 Sem compromisso</span>
             </div>
         </div>
     </section>
@@ -200,91 +131,104 @@
         </div>
     </section>
 
-    <!-- Recursos -->
-    <section id="recursos" class="py-16 px-4">
+    <!-- Demo Section -->
+    <section id="demo" class="py-16 px-4 bg-gray-800/30">
         <div class="container mx-auto">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-4">Sistema completo funcionando em tempo real</h2>
-                <p class="text-xl text-gray-400">Clique nos módulos abaixo para testar</p>
+                <h2 class="text-3xl font-bold mb-4">Veja o IH8 em Ação</h2>
+                <p class="text-xl text-gray-400">Demonstração ao vivo do sistema</p>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Avaliação IA -->
-                <div class="module-card bg-gray-800 rounded-lg p-6 border border-gray-700" onclick="demonstrarModulo('avaliacao')">
-                    <div class="text-4xl mb-4">🤖</div>
-                    <h3 class="text-xl font-bold mb-2">Avaliação por IA</h3>
-                    <p class="text-gray-400">Avalie qualquer imóvel em 3 segundos com 94.7% de precisão</p>
-                </div>
-                
-                <!-- CRM Visual -->
-                <div class="module-card bg-gray-800 rounded-lg p-6 border border-gray-700" onclick="demonstrarModulo('crm')">
-                    <div class="text-4xl mb-4">👥</div>
-                    <h3 class="text-xl font-bold mb-2">CRM Visual</h3>
-                    <p class="text-gray-400">Pipeline visual com automação e qualificação de leads</p>
-                </div>
-                
-                <!-- Contratos IA -->
-                <div class="module-card bg-gray-800 rounded-lg p-6 border border-gray-700" onclick="demonstrarModulo('contratos')">
-                    <div class="text-4xl mb-4">📄</div>
-                    <h3 class="text-xl font-bold mb-2">Contratos IA</h3>
-                    <p class="text-gray-400">Gere contratos legais automaticamente em 47 segundos</p>
-                </div>
-                
-                <!-- Blog IA -->
-                <div class="module-card bg-gray-800 rounded-lg p-6 border border-gray-700" onclick="demonstrarModulo('blog')">
-                    <div class="text-4xl mb-4">✍️</div>
-                    <h3 class="text-xl font-bold mb-2">Blog Automático</h3>
-                    <p class="text-gray-400">Conteúdo automático otimizado para SEO e captura de leads</p>
-                </div>
-                
-                <!-- Chat IA -->
-                <div class="module-card bg-gray-800 rounded-lg p-6 border border-gray-700" onclick="demonstrarModulo('chat')">
-                    <div class="text-4xl mb-4">💬</div>
-                    <h3 class="text-xl font-bold mb-2">Chat IA 24/7</h3>
-                    <p class="text-gray-400">Atendimento automático 24/7 com 87% de taxa de resposta</p>
-                </div>
-                
-                <!-- Analytics -->
-                <div class="module-card bg-gray-800 rounded-lg p-6 border border-gray-700" onclick="demonstrarModulo('analytics')">
-                    <div class="text-4xl mb-4">📊</div>
-                    <h3 class="text-xl font-bold mb-2">Analytics IA</h3>
-                    <p class="text-gray-400">Métricas em tempo real e insights estratégicos da IA</p>
+            <!-- Video Demo ou Screenshots -->
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-800 rounded-lg p-8 text-center">
+                    <div class="aspect-video bg-gray-700 rounded-lg mb-6 flex items-center justify-center">
+                        <div>
+                            <svg class="w-20 h-20 text-purple-400 mb-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"/>
+                            </svg>
+                            <p class="text-xl">Demonstração em breve!</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Estamos gravando uma demonstração completa do sistema.<br>
+                        Entre na lista de espera para ser avisado quando estiver pronta!
+                    </p>
+                    <button onclick="abrirFormularioEspera()" class="bg-purple-600 px-6 py-3 rounded-lg hover:bg-purple-700 transition">
+                        Me Avise Quando Estiver Pronto
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Depoimentos -->
-    <section id="depoimentos" class="py-16 px-4 bg-gray-800/50">
+    <!-- Recursos -->
+    <section id="recursos" class="py-16 px-4">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">O que nossos clientes dizem</h2>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Sistema completo em desenvolvimento</h2>
+                <p class="text-xl text-gray-400">Veja o que estamos construindo para você</p>
+            </div>
             
-            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                <div class="bg-gray-800 rounded-lg p-6">
-                    <div class="flex mb-4">
-                        <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
-                    </div>
-                    <p class="text-gray-300 mb-4">"Em 30 dias usando o IH8 beta, minha receita aumentou 150%. A IA é impressionante!"</p>
-                    <p class="font-bold">Carlos Silva</p>
-                    <p class="text-sm text-gray-400">Corretor Autônomo - SP</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Avaliação IA -->
+                <div class="module-card bg-gray-800 rounded-lg p-6 border border-gray-700">
+                    <div class="text-4xl mb-4">🤖</div>
+                    <h3 class="text-xl font-bold mb-2">Avaliação por IA</h3>
+                    <p class="text-gray-400">Avalie qualquer imóvel em 3 segundos com 94.7% de precisão</p>
+                    <span class="inline-block mt-4 px-3 py-1 bg-green-500/20 text-green-400 text-sm rounded-full">
+                        Em desenvolvimento
+                    </span>
                 </div>
                 
-                <div class="bg-gray-800 rounded-lg p-6">
-                    <div class="flex mb-4">
-                        <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
-                    </div>
-                    <p class="text-gray-300 mb-4">"Automatizamos 80% dos processos. Minha equipe agora foca só no que importa: vender!"</p>
-                    <p class="font-bold">Ana Costa</p>
-                    <p class="text-sm text-gray-400">Diretora Imobiliária Premium</p>
+                <!-- CRM Visual -->
+                <div class="module-card bg-gray-800 rounded-lg p-6 border border-gray-700">
+                    <div class="text-4xl mb-4">👥</div>
+                    <h3 class="text-xl font-bold mb-2">CRM Visual</h3>
+                    <p class="text-gray-400">Pipeline visual com automação e qualificação de leads</p>
+                    <span class="inline-block mt-4 px-3 py-1 bg-yellow-500/20 text-yellow-400 text-sm rounded-full">
+                        Próximo módulo
+                    </span>
                 </div>
                 
-                <div class="bg-gray-800 rounded-lg p-6">
-                    <div class="flex mb-4">
-                        <span class="text-yellow-400">⭐⭐⭐⭐⭐</span>
-                    </div>
-                    <p class="text-gray-300 mb-4">"O IH8 nos economiza R$ 15K/mês e vendemos 3x mais rápido. Indispensável!"</p>
-                    <p class="font-bold">Roberto Lima</p>
-                    <p class="text-sm text-gray-400">CEO Construtora Alpha</p>
+                <!-- Contratos IA -->
+                <div class="module-card bg-gray-800 rounded-lg p-6 border border-gray-700">
+                    <div class="text-4xl mb-4">📄</div>
+                    <h3 class="text-xl font-bold mb-2">Contratos IA</h3>
+                    <p class="text-gray-400">Gere contratos legais automaticamente em 47 segundos</p>
+                    <span class="inline-block mt-4 px-3 py-1 bg-blue-500/20 text-blue-400 text-sm rounded-full">
+                        Planejado
+                    </span>
+                </div>
+                
+                <!-- Blog IA -->
+                <div class="module-card bg-gray-800 rounded-lg p-6 border border-gray-700">
+                    <div class="text-4xl mb-4">✍️</div>
+                    <h3 class="text-xl font-bold mb-2">Blog Automático</h3>
+                    <p class="text-gray-400">Conteúdo automático otimizado para SEO e captura de leads</p>
+                    <span class="inline-block mt-4 px-3 py-1 bg-blue-500/20 text-blue-400 text-sm rounded-full">
+                        Planejado
+                    </span>
+                </div>
+                
+                <!-- Chat IA -->
+                <div class="module-card bg-gray-800 rounded-lg p-6 border border-gray-700">
+                    <div class="text-4xl mb-4">💬</div>
+                    <h3 class="text-xl font-bold mb-2">Chat IA 24/7</h3>
+                    <p class="text-gray-400">Atendimento automático 24/7 com 87% de taxa de resposta</p>
+                    <span class="inline-block mt-4 px-3 py-1 bg-blue-500/20 text-blue-400 text-sm rounded-full">
+                        Planejado
+                    </span>
+                </div>
+                
+                <!-- Analytics -->
+                <div class="module-card bg-gray-800 rounded-lg p-6 border border-gray-700">
+                    <div class="text-4xl mb-4">📊</div>
+                    <h3 class="text-xl font-bold mb-2">Analytics IA</h3>
+                    <p class="text-gray-400">Métricas em tempo real e insights estratégicos da IA</p>
+                    <span class="inline-block mt-4 px-3 py-1 bg-blue-500/20 text-blue-400 text-sm rounded-full">
+                        Planejado
+                    </span>
                 </div>
             </div>
         </div>
@@ -294,29 +238,30 @@
     <section id="precos" class="py-16 px-4">
         <div class="container mx-auto">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-4">Escolha seu plano</h2>
-                <p class="text-xl text-gray-400">7 dias grátis para testar • Cancele quando quiser</p>
+                <h2 class="text-3xl font-bold mb-4">Preços Especiais para Beta Testers</h2>
+                <p class="text-xl text-gray-400">Entre na lista de espera e garanta preços exclusivos</p>
+                <p class="text-sm text-green-400 mt-2">🎉 Planos a partir de R$ 49,90/mês!</p>
             </div>
             
             <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                 <!-- Starter -->
                 <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
                     <h3 class="text-2xl font-bold mb-2">Starter</h3>
-                    <p class="text-gray-400 mb-4">Para corretores autônomos</p>
+                    <p class="text-gray-400 mb-4">Para corretores iniciantes</p>
                     <div class="mb-6">
-                        <span class="text-4xl font-bold">R$ 197</span>
+                        <span class="text-4xl font-bold">R$ 49,90</span>
                         <span class="text-gray-400">/mês</span>
-                        <p class="text-sm text-gray-500 line-through">R$ 657/mês</p>
+                        <p class="text-sm text-green-400">Preço exclusivo Beta!</p>
                     </div>
                     <ul class="space-y-3 mb-6 text-gray-300">
-                        <li>✓ Até 100 imóveis</li>
-                        <li>✓ Avaliação por IA</li>
-                        <li>✓ CRM básico</li>
+                        <li>✓ Até 50 imóveis</li>
+                        <li>✓ Avaliação por IA básica</li>
+                        <li>✓ Portal de imóveis</li>
                         <li>✓ 1 usuário</li>
                         <li>✓ Suporte por email</li>
                     </ul>
-                    <button onclick="abrirModalLead('starter')" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 py-3 rounded-lg font-bold hover:opacity-90 transition">
-                        Começar Agora
+                    <button onclick="abrirFormularioEspera()" class="w-full bg-gray-700 py-3 rounded-lg font-bold hover:bg-gray-600 transition">
+                        Entrar na Lista de Espera
                     </button>
                 </div>
                 
@@ -326,72 +271,45 @@
                         MAIS POPULAR
                     </div>
                     <h3 class="text-2xl font-bold mb-2">Professional</h3>
-                    <p class="text-gray-400 mb-4">Para imobiliárias</p>
+                    <p class="text-gray-400 mb-4">Para corretores e pequenas imobiliárias</p>
                     <div class="mb-6">
-                        <span class="text-4xl font-bold">R$ 497</span>
+                        <span class="text-4xl font-bold">R$ 149,90</span>
                         <span class="text-gray-400">/mês</span>
-                        <p class="text-sm text-gray-500 line-through">R$ 1.657/mês</p>
+                        <p class="text-sm text-green-400">Economize R$ 350/mês!</p>
                     </div>
                     <ul class="space-y-3 mb-6 text-gray-300">
-                        <li>✓ Imóveis ilimitados</li>
+                        <li>✓ Até 500 imóveis</li>
                         <li>✓ Todos os recursos IA</li>
                         <li>✓ CRM completo</li>
-                        <li>✓ 5 usuários</li>
+                        <li>✓ 3 usuários</li>
                         <li>✓ Suporte prioritário</li>
+                        <li>✓ Relatórios avançados</li>
                     </ul>
-                    <button onclick="abrirModalLead('professional')" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 py-3 rounded-lg font-bold hover:opacity-90 transition">
-                        Começar Agora
+                    <button onclick="abrirFormularioEspera()" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 py-3 rounded-lg font-bold hover:opacity-90 transition">
+                        Entrar na Lista de Espera
                     </button>
                 </div>
                 
                 <!-- Enterprise -->
                 <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
                     <h3 class="text-2xl font-bold mb-2">Enterprise</h3>
-                    <p class="text-gray-400 mb-4">Para redes e construtoras</p>
+                    <p class="text-gray-400 mb-4">Para imobiliárias e construtoras</p>
                     <div class="mb-6">
-                        <span class="text-4xl font-bold">R$ 997</span>
+                        <span class="text-4xl font-bold">R$ 349,90</span>
                         <span class="text-gray-400">/mês</span>
-                        <p class="text-sm text-gray-500 line-through">R$ 3.324/mês</p>
+                        <p class="text-sm text-green-400">Plano completo!</p>
                     </div>
                     <ul class="space-y-3 mb-6 text-gray-300">
+                        <li>✓ Imóveis ilimitados</li>
                         <li>✓ Multi-empresas</li>
                         <li>✓ API completa</li>
-                        <li>✓ Personalização total</li>
                         <li>✓ Usuários ilimitados</li>
                         <li>✓ Suporte dedicado</li>
+                        <li>✓ Personalização total</li>
                     </ul>
-                    <button onclick="abrirModalLead('enterprise')" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 py-3 rounded-lg font-bold hover:opacity-90 transition">
-                        Falar com Vendas
+                    <button onclick="abrirFormularioEspera()" class="w-full bg-gray-700 py-3 rounded-lg font-bold hover:bg-gray-600 transition">
+                        Entrar na Lista de Espera
                     </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="py-16 px-4 bg-gray-800/50">
-        <div class="container mx-auto max-w-3xl">
-            <h2 class="text-3xl font-bold text-center mb-12">Perguntas Frequentes</h2>
-            
-            <div class="space-y-6">
-                <div class="bg-gray-800 rounded-lg p-6">
-                    <h3 class="text-xl font-bold mb-2">A IA é realmente confiável?</h3>
-                    <p class="text-gray-300">Sim! Nossa IA tem 94.7% de precisão, testada com mais de 50.000 transações reais. É a mesma tecnologia usada por grandes players do mercado.</p>
-                </div>
-                
-                <div class="bg-gray-800 rounded-lg p-6">
-                    <h3 class="text-xl font-bold mb-2">O desconto de 70% é permanente?</h3>
-                    <p class="text-gray-300">Sim! É nosso lançamento beta. Após o lançamento oficial, os preços serão os valores originais. O desconto é vitalício para beta testers.</p>
-                </div>
-                
-                <div class="bg-gray-800 rounded-lg p-6">
-                    <h3 class="text-xl font-bold mb-2">Preciso de conhecimento técnico?</h3>
-                    <p class="text-gray-300">Não! O IH8 é plug-and-play. Em 5 minutos você já está operando. Nosso suporte te ajuda na configuração inicial.</p>
-                </div>
-                
-                <div class="bg-gray-800 rounded-lg p-6">
-                    <h3 class="text-xl font-bold mb-2">Funciona no celular?</h3>
-                    <p class="text-gray-300">Perfeitamente! O sistema é 100% responsivo. Você pode operar de qualquer lugar, qualquer hora.</p>
                 </div>
             </div>
         </div>
@@ -400,18 +318,12 @@
     <!-- CTA Final -->
     <section class="py-20 px-4 gradient-bg">
         <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-4">Apenas 48 vagas restantes para o beta exclusivo</h2>
-            <p class="text-xl mb-8">com 70% de desconto vitalício</p>
-            <button onclick="abrirModalLead('footer')" class="bg-white text-purple-600 px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-100 transition">
-                Garantir Minha Vaga Agora
+            <h2 class="text-4xl font-bold mb-4">Seja um dos primeiros a usar o IH8</h2>
+            <p class="text-xl mb-8">Entre na lista de espera e ganhe acesso antecipado com desconto exclusivo</p>
+            <button onclick="abrirFormularioEspera()" class="bg-white text-purple-600 px-8 py-4 rounded-lg text-lg font-bold hover:bg-gray-100 transition">
+                Garantir Minha Vaga na Lista Beta
             </button>
-            <div class="mt-6 text-sm">
-                <span>💳 Parcelamos em até 12x</span>
-                <span class="mx-2">|</span>
-                <span>🔒 Compra 100% segura</span>
-                <span class="mx-2">|</span>
-                <span>📞 Suporte dedicado</span>
-            </div>
+            <p class="mt-4 text-sm">Sem compromisso • Sem cartão de crédito • Cancele quando quiser</p>
         </div>
     </section>
 
@@ -426,15 +338,134 @@
         </div>
     </footer>
 
-    <!-- Modal de Captura de Lead -->
-    <div id="lead-modal" class="fixed inset-0 bg-black/80 hidden z-50 flex items-center justify-center p-4">
+    <!-- Modal Lista de Espera -->
+    <div id="modal-espera" class="fixed inset-0 bg-black/80 hidden z-50 flex items-center justify-center p-4">
         <div class="bg-gray-900 rounded-2xl p-8 max-w-md w-full border border-gray-700">
-            <h3 class="text-2xl font-bold mb-4">Comece seu teste grátis de 7 dias</h3>
-            <p class="text-gray-400 mb-6">Preencha os dados para criar sua conta:</p>
+            <h3 class="text-2xl font-bold mb-4">Entre na Lista de Espera Beta</h3>
+            <p class="text-gray-400 mb-6">Seja um dos primeiros a testar o IH8 com 70% de desconto vitalício!</p>
             
-            <form id="lead-form" onsubmit="processarLead(event)">
+            <form id="form-espera" onsubmit="enviarFormularioEspera(event)">
                 <input type="text" name="nome" placeholder="Seu nome completo" required
                        class="w-full mb-4 px-4 py-3 bg-white/10 rounded-lg border border-gray-600 focus:border-purple-500 focus:outline-none">
                 
                 <input type="email" name="email" placeholder="Seu melhor e-mail" required
-                       class="w-full mb-4 px-4 py-3 bg-white/10 rounded-lg border border-gray-600 focus:border-purple-500 focus:
+                       class="w-full mb-4 px-4 py-3 bg-white/10 rounded-lg border border-gray-600 focus:border-purple-500 focus:outline-none">
+                
+                <input type="tel" name="whatsapp" placeholder="WhatsApp (11) 99999-9999" required
+                       class="w-full mb-4 px-4 py-3 bg-white/10 rounded-lg border border-gray-600 focus:border-purple-500 focus:outline-none">
+                
+                <select name="perfil" required class="w-full mb-4 px-4 py-3 bg-white/10 rounded-lg border border-gray-600 focus:border-purple-500 focus:outline-none">
+                    <option value="">Como você se identifica?</option>
+                    <option value="corretor">Corretor(a) Autônomo</option>
+                    <option value="imobiliaria">Dono(a) de Imobiliária</option>
+                    <option value="gestor">Gestor(a) de Equipe</option>
+                    <option value="outro">Outro</option>
+                </select>
+                
+                <button type="submit" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 py-3 rounded-lg font-bold hover:opacity-90 transition">
+                    Entrar na Lista de Espera
+                </button>
+                
+                <p class="text-xs text-gray-400 mt-4 text-center">
+                    Prometemos não enviar spam. Apenas atualizações importantes sobre o IH8.
+                </p>
+            </form>
+            
+            <button onclick="fecharModal()" class="mt-4 text-gray-400 hover:text-white text-sm w-full text-center">
+                Fechar
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal de Sucesso -->
+    <div id="modal-sucesso" class="fixed inset-0 bg-black/80 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-gray-900 rounded-2xl p-8 max-w-md w-full border border-green-500 text-center">
+            <div class="text-6xl mb-4">🎉</div>
+            <h3 class="text-2xl font-bold mb-4">Parabéns! Você está na lista!</h3>
+            <p class="text-gray-400 mb-6">
+                Você é uma das <span class="font-bold text-green-400">48 pessoas</span> que terão acesso antecipado ao IH8 com 70% de desconto vitalício!
+            </p>
+            <p class="text-sm text-gray-400 mb-6">
+                Enviamos um e-mail de confirmação. Fique atento, em breve enviaremos seu acesso exclusivo!
+            </p>
+            <button onclick="fecharModalSucesso()" class="bg-green-500 px-6 py-3 rounded-lg font-bold hover:bg-green-600 transition">
+                Entendido!
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Estado
+        let vagas = 48;
+
+        // Notificações Sociais
+        function iniciarNotificacoes() {
+            const nomes = ['Maria S.', 'Pedro A.', 'Ana C.', 'Carlos M.', 'Julia R.'];
+            const cidades = ['São Paulo', 'Rio de Janeiro', 'Belo Horizonte', 'Curitiba', 'Porto Alegre'];
+            
+            setInterval(() => {
+                const notif = document.getElementById('notificacao-social');
+                document.getElementById('nome-cliente').textContent = nomes[Math.floor(Math.random() * nomes.length)];
+                document.getElementById('cidade-cliente').textContent = cidades[Math.floor(Math.random() * cidades.length)];
+                
+                notif.classList.remove('hidden');
+                setTimeout(() => notif.classList.add('hidden'), 5000);
+            }, 45000);
+        }
+
+        // Modal functions
+        function abrirFormularioEspera() {
+            document.getElementById('modal-espera').classList.remove('hidden');
+        }
+
+        function fecharModal() {
+            document.getElementById('modal-espera').classList.add('hidden');
+        }
+
+        function fecharModalSucesso() {
+            document.getElementById('modal-sucesso').classList.add('hidden');
+        }
+
+        // Form submission
+        async function enviarFormularioEspera(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Aqui você pode enviar para seu backend ou Google Sheets
+            console.log('Lead capturado:', data);
+            
+            // Por enquanto, apenas simular sucesso
+            fecharModal();
+            
+            // Diminuir vagas
+            if (vagas > 0) {
+                vagas--;
+                document.getElementById('vagas').textContent = vagas;
+            }
+            
+            // Mostrar modal de sucesso
+            document.getElementById('modal-sucesso').classList.remove('hidden');
+            
+            // Limpar formulário
+            event.target.reset();
+            
+            // IMPORTANTE: Implemente aqui o envio real dos dados
+            // Opções:
+            // 1. Google Sheets via Apps Script
+            // 2. Webhook para Zapier/Make
+            // 3. Seu próprio backend
+            
+            // Exemplo Google Sheets:
+            /*
+            try {
+                const scriptURL = 'SUA_URL_GOOGLE_APPS_SCRIPT';
+                await fetch(scriptURL, {
+                    method: 'POST',
+                    body: JSON.stringify(data)
+                });
+            } catch (error) {
+                console.error('Erro ao enviar:', error);
+            }
+            */
