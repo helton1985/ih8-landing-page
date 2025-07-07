@@ -6,6 +6,9 @@
     <title>IH8 - Sistema Imobiliário com Inteligência Artificial | 94.7% de Precisão</title>
     <meta name="description" content="Revolucione suas vendas imobiliárias com IA. Avalie imóveis em 3 segundos, gere contratos automáticos e venda 5x mais rápido. Teste grátis por 7 dias.">
     
+    <!-- Stripe -->
+    <script src="https://js.stripe.com/v3/"></script>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .gradient-bg {
@@ -135,28 +138,77 @@
     <section id="demo" class="py-16 px-4 bg-gray-800/30">
         <div class="container mx-auto">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-4">Veja o IH8 em Ação</h2>
-                <p class="text-xl text-gray-400">Demonstração ao vivo do sistema</p>
+                <h2 class="text-3xl font-bold mb-4">Como Funciona o IH8</h2>
+                <p class="text-xl text-gray-400">Veja o sistema em ação e entenda como ele vai revolucionar seu negócio</p>
             </div>
             
-            <!-- Video Demo ou Screenshots -->
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-gray-800 rounded-lg p-8 text-center">
-                    <div class="aspect-video bg-gray-700 rounded-lg mb-6 flex items-center justify-center">
+            <!-- Video/Image Demo -->
+            <div class="max-w-6xl mx-auto">
+                <!-- Opção 1: Vídeo do YouTube -->
+                <div class="relative aspect-video bg-gray-800 rounded-lg overflow-hidden mb-8">
+                    <!-- Substitua VIDEO_ID pelo ID do seu vídeo do YouTube -->
+                    <iframe 
+                        src="https://www.youtube.com/embed/VIDEO_ID" 
+                        title="Demonstração IH8"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                        class="absolute inset-0 w-full h-full">
+                    </iframe>
+                </div>
+                
+                <!-- Opção 2: Imagem com explicação (caso não tenha vídeo ainda) -->
+                <div class="grid md:grid-cols-3 gap-6 mb-12">
+                    <div class="text-center">
+                        <div class="bg-purple-500/20 rounded-lg p-8 mb-4">
+                            <div class="text-5xl mb-4">📱</div>
+                            <h3 class="text-xl font-bold">1. Cadastre seus imóveis</h3>
+                        </div>
+                        <p class="text-gray-400">Importe sua planilha Excel ou cadastre manualmente em segundos</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-purple-500/20 rounded-lg p-8 mb-4">
+                            <div class="text-5xl mb-4">🤖</div>
+                            <h3 class="text-xl font-bold">2. IA analisa tudo</h3>
+                        </div>
+                        <p class="text-gray-400">Nossa IA avalia preços, sugere melhorias e qualifica leads automaticamente</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-purple-500/20 rounded-lg p-8 mb-4">
+                            <div class="text-5xl mb-4">🚀</div>
+                            <h3 class="text-xl font-bold">3. Venda 5x mais</h3>
+                        </div>
+                        <p class="text-gray-400">Portal otimizado, contratos automáticos e CRM inteligente</p>
+                    </div>
+                </div>
+                
+                <!-- Screenshots do Sistema -->
+                <div class="bg-gray-800 rounded-lg p-6 mb-8">
+                    <h3 class="text-xl font-bold mb-4 text-center">Principais Telas do Sistema</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
                         <div>
-                            <svg class="w-20 h-20 text-purple-400 mb-4" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"/>
-                            </svg>
-                            <p class="text-xl">Demonstração em breve!</p>
+                            <img src="https://via.placeholder.com/600x400/4C1D95/FFFFFF?text=Dashboard+Principal" 
+                                 alt="Dashboard IH8" 
+                                 class="rounded-lg w-full">
+                            <p class="text-sm text-gray-400 mt-2">Dashboard com métricas em tempo real</p>
+                        </div>
+                        <div>
+                            <img src="https://via.placeholder.com/600x400/4C1D95/FFFFFF?text=Portal+de+Imóveis" 
+                                 alt="Portal IH8" 
+                                 class="rounded-lg w-full">
+                            <p class="text-sm text-gray-400 mt-2">Portal público para seus clientes</p>
                         </div>
                     </div>
-                    <p class="text-gray-400 mb-6">
-                        Estamos gravando uma demonstração completa do sistema.<br>
-                        Entre na lista de espera para ser avisado quando estiver pronta!
-                    </p>
-                    <button onclick="abrirFormularioEspera()" class="bg-purple-600 px-6 py-3 rounded-lg hover:bg-purple-700 transition">
-                        Me Avise Quando Estiver Pronto
+                </div>
+                
+                <!-- CTA -->
+                <div class="text-center">
+                    <button onclick="abrirFormularioCompleto()" class="bg-gradient-to-r from-purple-500 to-pink-500 px-8 py-4 rounded-lg text-lg font-bold hover:opacity-90 transition">
+                        Quero Começar Agora
                     </button>
+                    <p class="text-sm text-gray-400 mt-4">Teste grátis por 7 dias • Cancele quando quiser</p>
                 </div>
             </div>
         </div>
@@ -260,8 +312,8 @@
                         <li>✓ 1 usuário</li>
                         <li>✓ Suporte por email</li>
                     </ul>
-                    <button onclick="abrirFormularioEspera()" class="w-full bg-gray-700 py-3 rounded-lg font-bold hover:bg-gray-600 transition">
-                        Entrar na Lista de Espera
+                    <button onclick="abrirFormularioCompleto('starter')" class="w-full bg-gray-700 py-3 rounded-lg font-bold hover:bg-gray-600 transition">
+                        Começar Teste Grátis
                     </button>
                 </div>
                 
@@ -285,8 +337,8 @@
                         <li>✓ Suporte prioritário</li>
                         <li>✓ Relatórios avançados</li>
                     </ul>
-                    <button onclick="abrirFormularioEspera()" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 py-3 rounded-lg font-bold hover:opacity-90 transition">
-                        Entrar na Lista de Espera
+                    <button onclick="abrirFormularioCompleto('professional')" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 py-3 rounded-lg font-bold hover:opacity-90 transition">
+                        Começar Teste Grátis
                     </button>
                 </div>
                 
@@ -307,8 +359,8 @@
                         <li>✓ Suporte dedicado</li>
                         <li>✓ Personalização total</li>
                     </ul>
-                    <button onclick="abrirFormularioEspera()" class="w-full bg-gray-700 py-3 rounded-lg font-bold hover:bg-gray-600 transition">
-                        Entrar na Lista de Espera
+                    <button onclick="abrirFormularioCompleto('enterprise')" class="w-full bg-gray-700 py-3 rounded-lg font-bold hover:bg-gray-600 transition">
+                        Falar com Vendas
                     </button>
                 </div>
             </div>
@@ -338,42 +390,52 @@
         </div>
     </footer>
 
-    <!-- Modal Lista de Espera -->
-    <div id="modal-espera" class="fixed inset-0 bg-black/80 hidden z-50 flex items-center justify-center p-4">
+    <!-- Modal Checkout Completo -->
+    <div id="modal-checkout" class="fixed inset-0 bg-black/80 hidden z-50 flex items-center justify-center p-4">
         <div class="bg-gray-900 rounded-2xl p-8 max-w-md w-full border border-gray-700">
-            <h3 class="text-2xl font-bold mb-4">Entre na Lista de Espera Beta</h3>
-            <p class="text-gray-400 mb-6">Seja um dos primeiros a testar o IH8 com 70% de desconto vitalício!</p>
+            <h3 class="text-2xl font-bold mb-4">Comece seu teste grátis de 7 dias</h3>
+            <p class="text-gray-400 mb-6">Após o período de teste, você será cobrado mensalmente.</p>
             
-            <form id="form-espera" onsubmit="enviarFormularioEspera(event)">
-                <input type="text" name="nome" placeholder="Seu nome completo" required
+            <form id="form-checkout" onsubmit="processarPagamento(event)">
+                <input type="text" name="nome" placeholder="Nome completo" required
                        class="w-full mb-4 px-4 py-3 bg-white/10 rounded-lg border border-gray-600 focus:border-purple-500 focus:outline-none">
                 
-                <input type="email" name="email" placeholder="Seu melhor e-mail" required
+                <input type="email" name="email" placeholder="E-mail" required
                        class="w-full mb-4 px-4 py-3 bg-white/10 rounded-lg border border-gray-600 focus:border-purple-500 focus:outline-none">
                 
                 <input type="tel" name="whatsapp" placeholder="WhatsApp (11) 99999-9999" required
                        class="w-full mb-4 px-4 py-3 bg-white/10 rounded-lg border border-gray-600 focus:border-purple-500 focus:outline-none">
                 
-                <select name="perfil" required class="w-full mb-4 px-4 py-3 bg-white/10 rounded-lg border border-gray-600 focus:border-purple-500 focus:outline-none">
-                    <option value="">Como você se identifica?</option>
-                    <option value="corretor">Corretor(a) Autônomo</option>
-                    <option value="imobiliaria">Dono(a) de Imobiliária</option>
-                    <option value="gestor">Gestor(a) de Equipe</option>
-                    <option value="outro">Outro</option>
-                </select>
+                <div class="bg-gray-800 rounded-lg p-4 mb-4">
+                    <p class="text-sm text-gray-400 mb-2">Plano selecionado:</p>
+                    <p class="font-bold text-lg" id="plano-selecionado-nome">Professional</p>
+                    <p class="text-2xl font-bold text-green-400" id="plano-selecionado-valor">R$ 149,90/mês</p>
+                </div>
                 
-                <button type="submit" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 py-3 rounded-lg font-bold hover:opacity-90 transition">
-                    Entrar na Lista de Espera
+                <input type="hidden" name="plano" id="plano-checkout">
+                
+                <button type="submit" id="btn-checkout" class="w-full bg-gradient-to-r from-purple-500 to-pink-500 py-3 rounded-lg font-bold hover:opacity-90 transition">
+                    Iniciar Teste Grátis
                 </button>
                 
                 <p class="text-xs text-gray-400 mt-4 text-center">
-                    Prometemos não enviar spam. Apenas atualizações importantes sobre o IH8.
+                    Você será redirecionado para finalizar o pagamento com Stripe.<br>
+                    Cancele a qualquer momento durante o período de teste.
                 </p>
             </form>
             
-            <button onclick="fecharModal()" class="mt-4 text-gray-400 hover:text-white text-sm w-full text-center">
+            <button onclick="fecharCheckout()" class="mt-4 text-gray-400 hover:text-white text-sm w-full text-center">
                 Fechar
             </button>
+        </div>
+    </div>
+
+    <!-- Modal Loading -->
+    <div id="modal-loading" class="fixed inset-0 bg-black/80 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-gray-900 rounded-2xl p-8 text-center">
+            <div class="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-purple-500 mx-auto mb-4"></div>
+            <p class="text-xl font-bold">Preparando seu checkout...</p>
+            <p class="text-gray-400 mt-2">Aguarde alguns segundos</p>
         </div>
     </div>
 
